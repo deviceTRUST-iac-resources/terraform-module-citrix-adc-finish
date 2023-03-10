@@ -3,9 +3,8 @@
 #####
 
 resource "citrixadc_dnsnameserver" "finish_dnsnameserver" {
-    count     = length(var.adc-finish-dnsvserver.dnsvservername)
-    dnsvservername = element(var.adc-finish-dnsvserver["dnsvservername"],count.index)
-    type           = element(var.adc-finish-dnsvserver["type"],count.index)
+    dnsvservername = var.adc-finish.dnsvservername
+    type           = var.adc-finish.dnsvservertype
 }
 
 #####
