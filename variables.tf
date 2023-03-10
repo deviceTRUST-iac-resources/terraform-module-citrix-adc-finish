@@ -9,5 +9,5 @@ variable adc-base{
 # Functional Variables
 #####
 
-variable adc-finish-dnsvserver {
+variable adc-finish {
 }
